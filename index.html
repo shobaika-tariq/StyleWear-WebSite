@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+   <div class="koo">
+         
+<nav class=" nav bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default">
+
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+
+      <img src="images/icons8-hanger-60.png" class="h-7 mx-9" alt="Flowbite Logo" />
+       
+       <span class="self-center text-xl text-white text-heading font-semibold whitespace-nowrap ">StyleWear</span> 
+  </a>
+
+  <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+
+      <button type="button" data-dropdown-toggle="language-dropdown-menu" class="btn1">
+
+        <!-- <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.00023 16.5C13.1425 16.5 16.5005 13.1421 16.5005 9C16.5005 4.85786 13.1425 1.5 9.00023 1.5C4.85797 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85797 16.5 9.00023 16.5Z" fill="white"/>
+            <path d="M8.67548 8.99996H16.5012C16.5012 8.32308 16.4109 7.66735 16.2428 7.04358H8.67548V8.99996Z" fill="#D80027"/>
+            <path d="M8.67548 5.08712H15.4004C14.9413 4.338 14.3543 3.67585 13.6699 3.13074H8.67548V5.08712Z" fill="#D80027"/>
+            <path d="M9.0005 16.5001C10.7655 16.5001 12.3878 15.89 13.6689 14.8698H4.33209C5.61318 15.89 7.23548 16.5001 9.0005 16.5001Z" fill="#D80027"/>
+            <path d="M2.60125 12.9132H15.4C15.7686 12.3118 16.0545 11.6543 16.2425 10.9567H1.75879C1.94679 11.6543 2.23265 12.3118 2.60125 12.9132Z" fill="#D80027"/>
+            <path d="M4.97397 2.67114H5.65741L5.0217 3.13297L5.26453 3.88024L4.62884 3.41841L3.99316 3.88024L4.20292 3.23468C3.6432 3.7009 3.15262 4.24713 2.74834 4.85575H2.96732L2.56266 5.14972C2.49962 5.25489 2.43915 5.36173 2.38121 5.47015L2.57444 6.06485L2.21393 5.80293C2.12432 5.99279 2.04235 6.18692 1.96867 6.3851L2.18156 7.04036H2.96732L2.33161 7.50219L2.57444 8.24947L1.93876 7.78764L1.55798 8.0643C1.51986 8.37066 1.5 8.6827 1.5 8.99941H8.99964C8.99964 4.85763 8.99964 4.36934 8.99964 1.5C7.51811 1.5 6.13703 1.92975 4.97397 2.67114ZM5.26453 8.24947L4.62884 7.78764L3.99316 8.24947L4.23599 7.50219L3.60028 7.04036H4.38604L4.62884 6.29309L4.87165 7.04036H5.65741L5.0217 7.50219L5.26453 8.24947ZM5.0217 5.31758L5.26453 6.06485L4.62884 5.60303L3.99316 6.06485L4.23599 5.31758L3.60028 4.85575H4.38604L4.62884 4.10848L4.87165 4.85575H5.65741L5.0217 5.31758ZM7.95461 8.24947L7.31893 7.78764L6.68325 8.24947L6.92608 7.50219L6.29037 7.04036H7.07613L7.31893 6.29309L7.56173 7.04036H8.34749L7.71178 7.50219L7.95461 8.24947ZM7.71178 5.31758L7.95461 6.06485L7.31893 5.60303L6.68325 6.06485L6.92608 5.31758L6.29037 4.85575H7.07613L7.31893 4.10848L7.56173 4.85575H8.34749L7.71178 5.31758ZM7.71178 3.13297L7.95461 3.88024L7.31893 3.41841L6.68325 3.88024L6.92608 3.13297L6.29037 2.67114H7.07613L7.31893 1.92386L7.56173 2.67114H8.34749L7.71178 3.13297Z" fill="#1A47B8"/></svg> -->
+        Order Now
+      </button>
+      <!-- Dropdown -->
+      <div class="hidden Dropdown" id="language-dropdown-menu">
+
+        <ul class="p-2 text-sm text-body font-medium" role="none">
+
+          <li>
+
+            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" role="menuitem">
+              <div class="inline-flex items-center">
+                <!-- <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.00023 16.5C13.1425 16.5 16.5005 13.1421 16.5005 9C16.5005 4.85786 13.1425 1.5 9.00023 1.5C4.85797 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85797 16.5 9.00023 16.5Z" fill="white"/><path d="M8.67548 8.99996H16.5012C16.5012 8.32308 16.4109 7.66735 16.2428 7.04358H8.67548V8.99996Z" fill="#D80027"/><path d="M8.67548 5.08712H15.4004C14.9413 4.338 14.3543 3.67585 13.6699 3.13074H8.67548V5.08712Z" fill="#D80027"/><path d="M9.0005 16.5001C10.7655 16.5001 12.3878 15.89 13.6689 14.8698H4.33209C5.61318 15.89 7.23548 16.5001 9.0005 16.5001Z" fill="#D80027"/><path d="M2.60125 12.9132H15.4C15.7686 12.3118 16.0545 11.6543 16.2425 10.9567H1.75879C1.94679 11.6543 2.23265 12.3118 2.60125 12.9132Z" fill="#D80027"/><path d="M4.97397 2.67114H5.65741L5.0217 3.13297L5.26453 3.88024L4.62884 3.41841L3.99316 3.88024L4.20292 3.23468C3.6432 3.7009 3.15262 4.24713 2.74834 4.85575H2.96732L2.56266 5.14972C2.49962 5.25489 2.43915 5.36173 2.38121 5.47015L2.57444 6.06485L2.21393 5.80293C2.12432 5.99279 2.04235 6.18692 1.96867 6.3851L2.18156 7.04036H2.96732L2.33161 7.50219L2.57444 8.24947L1.93876 7.78764L1.55798 8.0643C1.51986 8.37066 1.5 8.6827 1.5 8.99941H8.99964C8.99964 4.85763 8.99964 4.36934 8.99964 1.5C7.51811 1.5 6.13703 1.92975 4.97397 2.67114ZM5.26453 8.24947L4.62884 7.78764L3.99316 8.24947L4.23599 7.50219L3.60028 7.04036H4.38604L4.62884 6.29309L4.87165 7.04036H5.65741L5.0217 7.50219L5.26453 8.24947ZM5.0217 5.31758L5.26453 6.06485L4.62884 5.60303L3.99316 6.06485L4.23599 5.31758L3.60028 4.85575H4.38604L4.62884 4.10848L4.87165 4.85575H5.65741L5.0217 5.31758ZM7.95461 8.24947L7.31893 7.78764L6.68325 8.24947L6.92608 7.50219L6.29037 7.04036H7.07613L7.31893 6.29309L7.56173 7.04036H8.34749L7.71178 7.50219L7.95461 8.24947ZM7.71178 5.31758L7.95461 6.06485L7.31893 5.60303L6.68325 6.06485L6.92608 5.31758L6.29037 4.85575H7.07613L7.31893 4.10848L7.56173 4.85575H8.34749L7.71178 5.31758ZM7.71178 3.13297L7.95461 3.88024L7.31893 3.41841L6.68325 3.88024L6.92608 3.13297L6.29037 2.67114H7.07613L7.31893 1.92386L7.56173 2.67114H8.34749L7.71178 3.13297Z" fill="#1A47B8"/></svg>              -->
+                Women clothes
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" role="menuitem">
+              <div class="inline-flex items-center">
+                <!-- <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.96631 11.6087C3.02601 14.4647 5.77508 16.5 8.99981 16.5C12.2245 16.5 14.9736 14.4647 16.0333 11.6087L8.99981 10.9565L1.96631 11.6087Z" fill="#FFDA44"/><path d="M8.99981 1.5C5.77508 1.5 3.02601 3.53531 1.96631 6.39132L8.99981 7.04347L16.0333 6.39129C14.9736 3.53531 12.2245 1.5 8.99981 1.5Z" fill="black"/><path d="M1.96649 6.39136C1.66503 7.20385 1.5 8.08264 1.5 9.00004C1.5 9.91744 1.66503 10.7962 1.96649 11.6087H16.0335C16.335 10.7962 16.5 9.91744 16.5 9.00004C16.5 8.08264 16.335 7.20385 16.0335 6.39136H1.96649Z" fill="#D80027"/></svg> -->
+                Men clothes
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" role="menuitem">
+              <div class="inline-flex items-center">
+                <!-- <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" fill="white"/><path d="M16.5012 9.00018C16.5012 5.77544 14.4659 3.02637 11.6099 1.96667V16.0337C14.4659 14.974 16.5012 12.2249 16.5012 9.00018Z" fill="#D80027"/><path d="M1.5 8.99994C1.5 12.2247 3.53531 14.9737 6.39132 16.0334V1.96643C3.53531 3.02613 1.5 5.7752 1.5 8.99994Z" fill="#249F58"/></svg>             -->
+                Winter Collection
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" role="menuitem">
+              <div class="inline-flex items-center">
+                <!-- <svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" fill="#D80027"/><path d="M5.60449 6.06458L6.25195 8.05676H8.34668L6.65332 9.29016L7.30078 11.2823L5.60449 10.0519L3.9082 11.2823L4.55859 9.29016L2.8623 8.05676H4.95703L5.60449 6.06458Z" fill="#FFDA44"/><path d="M10.3906 13.1162L9.89551 12.5068L9.16309 12.791L9.58789 12.1318L9.09277 11.5195L9.85156 11.7217L10.2793 11.0625L10.3203 11.8477L11.082 12.0498L10.3467 12.3311L10.3906 13.1162Z" fill="#FFDA44"/><path d="M11.375 11.3291L11.6094 10.5791L10.9678 10.125L11.7529 10.1133L11.9844 9.36328L12.2393 10.1074L13.0244 10.0986L12.3945 10.5674L12.6465 11.3115L12.0049 10.8574L11.375 11.3291Z" fill="#FFDA44"/><path d="M12.7041 7.00488L12.3584 7.71094L12.9209 8.25879L12.1445 8.14746L11.7988 8.85059L11.6641 8.07715L10.8848 7.96582L11.582 7.59961L11.4473 6.82324L12.0098 7.37109L12.7041 7.00488Z" fill="#FFDA44"/><path d="M10.4126 4.86621L10.354 5.64844L11.0835 5.94434L10.3188 6.13184L10.2632 6.91699L9.8501 6.24902L9.08545 6.43652L9.59229 5.83594L9.17627 5.1709L9.90576 5.4668L10.4126 4.86621Z" fill="#FFDA44"/></svg> -->
+                 
+                Summer Collection
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-language" aria-expanded="false">
+
+        <span class="sr-only">Open main menu</span>
+        
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+    <ul class="ul1 font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+      <li>
+        <a href="#" class="block py-2 px-3  bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
+      </li>
+       <li>
+        <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent ">Shop</a>
+      </li>
+       <li>
+        <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Men</a>
+      </li>
+       <li>
+        <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Women</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</a>
+      </li>
+      
+      <li>
+        <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+    
+<!-- home page -->
+ <section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font text-6xl mb-4 font-bold text-[#f4c651]">Style Your 
+        <br class="hidden lg:inline-block">Every Moment
+      </h1>
+       <div class="side-text">
+      <p>Good<br>Clothes<br>Good<br>Mood</p>
+      <span>♡</span>
+    </div>
+      <p class="mb-8 text-2xl leading-relaxed text-white">Discover the latest fashion trends and premium
+        <br> Quality clothing for men and women.
+      </p>
+      <div class="flex justify-center">
+        <button class="btn1 inline-flex text-white bg-yellow-500  py-1 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Shop Now </button>
+        
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md-8 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src="images/image.png">
+    </div>
+  </div>
+</section>
+ <!-- catagory page start  -->
+      <section class="px-4 md:px-8 mt-6" aria-labelledby="category-heading">
+    <div class=" cata max-w-7xl mx-auto">
+        <center>
+         <h1 id="category-heading" class="text-2xl font-bold text-[#ffd278] mb-8">
+            <span>____</span> Shop By Categories <span>____</span>
+        </h1>
+        </center>
+
+        <ul class="grid grid-cols-2  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 sm:gap-6 gap-4">
+
+            <li class="li1">
+                <div class="aspect-square overflow-hidden mx-auto">
+                  <br>
+                    <img src="images/img1.webp" alt=""
+                        class="h-full w-full object-cover object-top" />
+                </div>
+                <div class="mt-4 px-2">
+                    <h3 class="text-slate-900 text-sm font-semibold">Women Fashions
+                    </h3>
+                    <p class="para1 mt-2 text-xs text-slate-500 font-medium">The colors of this season</p>
+                    <a href="#"
+                        class="mt-2 inline-block text-[13px] text-blue-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Explore
+                        →</a>
+                </div>
+            </li>
+
+            
+
+            <li class="li1">
+                <div class="aspect-square overflow-hidden mx-auto">
+                  <br>
+                    <img src="images/img2.webp" alt=""
+                        class="h-full w-full object-cover object-top" />
+                </div>
+                <div class="mt-4 px-2">
+                    <h3 class="text-slate-900 text-sm font-semibold">Fresh Maxi Looks</h3>
+                    <p class=" para1 mt-2 text-xs text-slate-500 font-medium">The colors of this season</p>
+                    <a href="#"
+                        class="mt-2 inline-block text-[13px] text-blue-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Explore
+                        →</a>
+                </div>
+            </li>
+
+            <li class="li1">
+                <div class="aspect-square overflow-hidden mx-auto">
+                  <br>
+                    <img src="images/img4.png" alt=""
+                        class="h-full w-full object-cover object-top" />
+                </div>
+                <div class="mt-4 px-2">
+                    <h3 class="text-slate-900 text-sm font-semibold">Wedding Dress </h3>
+                    <p class="para1 mt-2 text-xs text-slate-500 font-medium">The colors of this season</p>
+                    <a href="#"
+                        class="para1 mt-2 inline-block text-[13px] text-blue-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Explore
+                        →</a>
+                </div>
+            </li>
+
+            <li class="li1">
+                <div class="aspect-square overflow-hidden mx-auto">
+                  <br>
+                    <img src="images/img3.png" alt=""
+                        class="h-full w-full object-cover object-top" />
+                </div>
+                <div class="mt-4 px-2">
+                    <h3 class="text-slate-900 text-sm font-semibold"> Eid  Collection</h3>
+                    <p class=" para1 mt-2 text-xs text-slate-500 font-medium">The colors of this season</p>
+                    <a href="#"
+                        class="mt-2 inline-block text-[13px] text-blue-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Explore
+                        →</a>
+                </div>
+            </li>
+
+            <li class="li1">
+                <div class="aspect-square overflow-hidden mx-auto">
+                  <br>
+                    <img src="images/img5.webp" alt=""
+                        class="h-full w-full object-cover object-top" />
+                </div>
+                <div class="mt-4 px-2">
+                    <h3 class="text-slate-900 text-sm font-semibold">classic Saree</h3>
+                    <p class="para1 mt-2 text-xs text-slate-500 font-medium">The colors of this season</p>
+                    <a href="#"
+                        class="mt-2 inline-block text-[13px] text-blue-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Explore
+                        →</a>
+                </div>
+            </li>
+
+            <li class="li1">
+                <div class="aspect-square overflow-hidden mx-auto">
+                  <br>
+                    <img src="images/img6.png" alt=""
+                        class="h-full w-full object-cover object-top" />
+                </div>
+                <div class="mt-4 px-2">
+                    <h3 class="text-slate-900 text-sm font-semibold">Men Suits</h3>
+                    <p class="para1 mt-2 text-xs text-slate-500 font-medium">The colors of this season</p>
+                    <a href="#"
+                        class="mt-2 inline-block text-[13px] text-blue-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Explore
+                        →</a>
+                </div>
+            </li>
+
+            <li class="li1">
+                <div class="aspect-square overflow-hidden mx-auto">
+                  <br>
+                    <img src="images/img7.jpg" alt=""
+                        class="h-full w-full object-cover object-top" />
+                </div>
+                <div class="mt-4 px-2">
+                    <h3 class="text-slate-900 text-sm font-semibold">Men Fashions</h3>
+                    <p class="para1 mt-2 text-xs text-slate-500 font-medium">The colors of this season</p>
+                    <a href="#"
+                        class="mt-2 inline-block text-[13px] text-blue-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Explore
+                        →</a>
+                </div>
+            </li>
+
+            
+            <li class="li1">
+                <div class="aspect-square overflow-hidden mx-auto">
+                  <br>
+                    <img src="images/img8.png" alt=""
+                        class="h-full w-full object-cover object-top" />
+                </div>
+                <div class="mt-4 px-2">
+                    <h3 class="text-slate-900 text-sm font-semibold">Eid collection</h3>
+                    <p class="para1 mt-2 text-xs text-slate-500 font-medium">The colors of this season</p>
+                    <a href="#"
+                        class="mt-2 inline-block text-[13px] text-blue-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Explore
+                        →</a>
+                </div>
+            </li>
+
+            <li class="li1">
+                <div class="aspect-square overflow-hidden mx-auto">
+                  <br>
+                    <img src="images/img9.png" alt=""
+                        class="h-full w-full object-cover object-top" />
+                </div>
+                <div class="mt-4 px-2">
+                    <h3 class="text-slate-900 text-sm font-semibold">Wedding Dress</h3>
+                    <p class="para1 mt-2 text-xs text-slate-500 font-medium">The colors of this season</p>
+                    <a href="#"
+                        class="mt-2 inline-block text-[13px] text-blue-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Explore
+                        →</a>
+                </div>
+            </li>
+
+            
+            <li class="li1">
+                <div class="aspect-square overflow-hidden mx-auto">
+                  <br>
+                    <img src="images/img10.jpg" alt=""
+                        class="h-full w-full object-cover object-top" />
+                </div>
+                <div class="mt-4 px-2">
+                    <h3 class="text-slate-900 text-sm font-semibold"> Men Salwar Kameez</h3>
+                    <p class="para1 mt-2 text-xs text-slate-500 font-medium">The colors of this season</p>
+                    <a href="#"
+                        class="mt-2 inline-block text-[13px] text-blue-700 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Explore
+                        →</a>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+</section>
+
+ <!-- catagory page end  -->
+
+ 
+<!-- card page start  -->
+    
+
+   <section class="mt-6 px-4 md:px-8" aria-label="products">
+    <br><br><br>
+    <center>
+        <h1 id="category-heading" class="text-4xl font-bold text-[#ffd278] mb-8">
+            <span>____</span> Featured Products<span>____</span>
+        </h1>
+        <p class="text-2xl font-bold text-[#ffd278] mb-8">Top picks for you</p>
+    </center>
+   <div class="mx-auto">
+
+      <ul class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+         <div class="card">
+            <li class="flex flex-col hover:shadow-md transition-all">
+            <div class=" w-full  bg-white">
+               <a href="#" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                  <img src="images/CRIMSON.webp" alt="fashion product 1"
+                     class="w-full object-cover object-top aspect-[230/307]" />
+               </a>
+            </div>
+
+            <div class="p-2 flex-1 flex flex-col">
+               <div class="flex-1">
+                  <div class="w-full">
+                     <h3 class="text-base font-semibold text-slate-900 truncate">
+                        Crimson Grace Gown</h3>
+                     <p class="text-sm mt-1 text-slate-600 truncate">Flowy and elegant red dress
+                     </p>
+                  </div>
+                  <div class="flex items-center flex-wrap justify-between gap-2 mt-3">
+                     <div class="flex gap-2">
+                        <p class="text-base font-bold text-slate-900">$10</p>
+                        <p class="text-base text-slate-600"><strike>$15</strike></p>
+                     </div>
+                     <div class="flex justify-center gap-2" role="img" aria-label="Rated 4 out of 5 stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#CED5D8]"
+                           viewBox="0 0 24 24" aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex items-center gap-3 mt-4">
+                  <button type="button"
+                     class="w-full cursor-pointer text-sm px-3.5 py-2 font-semibold rounded-md bg-blue-600 hover:bg-blue-700 text-white border border-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Add
+                     to cart</button>
+                  <button type="button" aria-label="Add to wishlist"
+                     class="border border-slate-300 hover:bg-gray-50 w-12 h-9 flex items-center justify-center rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                     title="Wishlist">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-pink-700"
+                        viewBox="0 0 64 64" aria-hidden="true">
+                        <path
+                           d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                           data-original="#000000" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </li>
+         </div>
+
+         <div class="card">
+            
+         <li class="flex flex-col hover:shadow-md transition-all">
+            <div class="w-full bg-gray-50">
+               <a href="#" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                  <img src="images/green.png" alt="Product 2"
+                     class="w-full object-cover object-top aspect-[230/307]" />
+               </a>
+            </div>
+
+            <div class="p-2 flex-1 flex flex-col">
+               <div class="flex-1">
+                  <div class="w-full">
+                     <h3 class="text-base font-semibold text-slate-900 truncate">
+                        Emerald Empress Gown</h3>
+                     <p class="text-sm mt-1 text-slate-600 truncate">Regal, cape-style green
+                        outfit</p>
+                  </div>
+                  <div class="flex items-center flex-wrap justify-between gap-2 mt-3">
+                     <div class="flex gap-2">
+                        <p class="text-base font-bold text-slate-900">$12</p>
+                        <p class="text-base text-slate-600"><strike>$15</strike></p>
+                     </div>
+                     <div class="flex justify-center gap-2" role="img" aria-label="Rated 4 out of 5 stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#CED5D8]"
+                           viewBox="0 0 24 24" aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex items-center gap-3 mt-4">
+                  <button type="button"
+                     class="w-full cursor-pointer text-sm px-3.5 py-2 font-semibold rounded-md bg-blue-600 hover:bg-blue-700 text-white border border-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Add
+                     to cart</button>
+                  <button type="button" aria-label="Add to wishlist"
+                     class="border border-slate-300 hover:bg-gray-50 w-12 h-9 flex items-center justify-center rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                     title="Wishlist">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-pink-700"
+                        viewBox="0 0 64 64" aria-hidden="true">
+                        <path
+                           d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                           data-original="#000000" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </li>
+         </div>
+
+
+        <div class="card">
+          <li class="flex flex-col hover:shadow-md transition-all">
+            <div class="w-full bg-gray-50">
+               <a href="#" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                  <img src="images/gettyimages-1685361161-650710f35cf69.avif" alt="Product 3"
+                     class="w-full object-cover object-top aspect-[230/307]" />
+               </a>
+            </div>
+
+            <div class="p-2 flex-1 flex flex-col">
+               <div class="flex-1">
+                  <div class="w-full">
+                     <h3 class="text-base font-semibold text-slate-900 truncate">Urban
+                        Edge Tee</h3>
+                     <p class="text-sm mt-1 text-slate-600 truncate">Sleek black leather and
+                        white tee combo</p>
+                  </div>
+                  <div class="flex items-center flex-wrap justify-between gap-2 mt-3">
+                     <div class="flex gap-2">
+                        <p class="text-base font-bold text-slate-900">$14</p>
+                        <p class="text-base text-slate-600"><strike>$15</strike></p>
+                     </div>
+                     <div class="flex justify-center gap-2" role="img" aria-label="Rated 4 out of 5 stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#CED5D8]"
+                           viewBox="0 0 24 24" aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex items-center gap-3 mt-4">
+                  <button type="button"
+                     class="w-full cursor-pointer text-sm px-3.5 py-2 font-semibold rounded-md bg-blue-600 hover:bg-blue-700 text-white border border-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Add
+                     to cart</button>
+                  <button type="button" aria-label="Add to wishlist"
+                     class="border border-slate-300 hover:bg-gray-50 w-12 h-9 flex items-center justify-center rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                     title="Wishlist">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-pink-700"
+                        viewBox="0 0 64 64" aria-hidden="true">
+                        <path
+                           d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                           data-original="#000000" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </li>
+        </div>
+
+        <div class="card">
+          <li class="flex flex-col hover:shadow-md transition-all">
+            <div class="w-full bg-gray-50">
+               <a href="#" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                  <img src="images/images1.png" alt="Product 3"
+                     class="w-full object-cover object-top aspect-[230/307]" />
+               </a>
+            </div>
+
+            <div class="p-2 flex-1 flex flex-col">
+               <div class="flex-1">
+                  <div class="w-full">
+                     <h3 class="text-base font-semibold text-slate-900 truncate">Street
+                        Luxe Knit Set</h3>
+                     <p class="text-sm mt-1 text-slate-600 truncate">Casual streetwear with a
+                        stylish knit top</p>
+                  </div>
+                  <div class="flex items-center flex-wrap justify-between gap-2 mt-3">
+                     <div class="flex gap-2">
+                        <p class="text-base font-bold text-slate-900">$12</p>
+                        <p class="text-base text-slate-600"><strike>$15</strike></p>
+                     </div>
+                     <div class="flex justify-center gap-2" role="img" aria-label="Rated 4 out of 5 stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#CED5D8]"
+                           viewBox="0 0 24 24" aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex items-center gap-3 mt-4">
+                  <button type="button"
+                     class="w-full cursor-pointer text-sm px-3.5 py-2 font-semibold rounded-md bg-blue-600 hover:bg-blue-700 text-white border border-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Add
+                     to cart</button>
+                  <button type="button" aria-label="Add to wishlist"
+                     class="border border-slate-300 hover:bg-gray-50 w-12 h-9 flex items-center justify-center rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                     title="Wishlist">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-pink-700"
+                        viewBox="0 0 64 64" aria-hidden="true">
+                        <path
+                           d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                           data-original="#000000" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </li>
+        </div>
+
+        <div class="card">
+         
+         <li class="flex flex-col hover:shadow-md transition-all">
+            <div class="w-full bg-gray-50">
+               <a href="#" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                  <img src="images/image3.png" alt="Product 3"
+                     class="w-full object-cover object-top aspect-[230/307]" />
+               </a>
+            </div>
+
+            <div class="p-2 flex-1 flex flex-col">
+               <div class="flex-1">
+                  <div class="w-full">
+                     <h3 class="text-base font-semibold text-slate-900 truncate">Bold
+                        Stroll Coat Set</h3>
+                     <p class="text-sm mt-1 text-slate-600 truncate">Statement black coat with
+                        red print trousers</p>
+                  </div>
+                  <div class="flex items-center flex-wrap justify-between gap-2 mt-3">
+                     <div class="flex gap-2">
+                        <p class="text-base font-bold text-slate-900">$15</p>
+                        <p class="text-base text-slate-600"><strike>$15</strike></p>
+                     </div>
+                     <div class="flex justify-center gap-2" role="img" aria-label="Rated 4 out of 5 stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#CED5D8]"
+                           viewBox="0 0 24 24" aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex items-center gap-3 mt-4">
+                  <button type="button"
+                     class="w-full cursor-pointer text-sm px-3.5 py-2 font-semibold rounded-md bg-blue-600 hover:bg-blue-700 text-white border border-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Add
+                     to cart</button>
+                  <button type="button" aria-label="Add to wishlist"
+                     class="border border-slate-300 hover:bg-gray-50 w-12 h-9 flex items-center justify-center rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                     title="Wishlist">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-pink-700"
+                        viewBox="0 0 64 64" aria-hidden="true">
+                        <path
+                           d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                           data-original="#000000" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </li>
+        </div>
+
+         <div class="card">
+            <li class="flex flex-col hover:shadow-md transition-all">
+            <div class="w-full bg-gray-50">
+               <a href="#" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                  <img src="images/image4.png" alt="Product 3"
+                     class="w-full object-cover object-top aspect-[230/307]" />
+               </a>
+            </div>
+
+            <div class="p-2 flex-1 flex flex-col">
+               <div class="flex-1">
+                  <div class="w-full">
+                     <h3 class="text-base font-semibold text-slate-900 truncate">Floral
+                        Blush Midi Dress</h3>
+                     <p class="text-sm mt-1 text-slate-600 truncate">Soft, romantic floral dress
+                     </p>
+                  </div>
+                  <div class="flex items-center flex-wrap justify-between gap-2 mt-3">
+                     <div class="flex gap-2">
+                        <p class="text-base font-bold text-slate-900">$14</p>
+                        <p class="text-base text-slate-600"><strike>$15</strike></p>
+                     </div>
+                     <div class="flex justify-center gap-2" role="img" aria-label="Rated 4 out of 5 stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#CED5D8]"
+                           viewBox="0 0 24 24" aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex items-center gap-3 mt-4">
+                  <button type="button"
+                     class="w-full cursor-pointer text-sm px-3.5 py-2 font-semibold rounded-md bg-blue-600 hover:bg-blue-700 text-white border border-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Add
+                     to cart</button>
+                  <button type="button" aria-label="Add to wishlist"
+                     class="border border-slate-300 hover:bg-gray-50 w-12 h-9 flex items-center justify-center rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                     title="Wishlist">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-pink-700"
+                        viewBox="0 0 64 64" aria-hidden="true">
+                        <path
+                           d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                           data-original="#000000" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </li>
+         </div>
+
+         <div class="card">
+            <li class="flex flex-col hover:shadow-md transition-all">
+            <div class="w-full bg-gray-50">
+               <a href="#" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                  <img src="images/images5.png" alt="Product 3"
+                     class="w-full object-cover object-top aspect-[230/307]" />
+               </a>
+            </div>
+
+            <div class="p-2 flex-1 flex flex-col">
+               <div class="flex-1">
+                  <div class="w-full">
+                     <h3 class="text-base font-semibold text-slate-900 truncate">Chic
+                        Contrast Blazer Fit</h3>
+                     <p class="text-sm mt-1 text-slate-600 truncate">Trendy blazer and denim
+                        street style</p>
+                  </div>
+                  <div class="flex items-center flex-wrap justify-between gap-2 mt-3">
+                     <div class="flex gap-2">
+                        <p class="text-base font-bold text-slate-900">$14</p>
+                        <p class="text-base text-slate-600"><strike>$15</strike></p>
+                     </div>
+                     <div class="flex justify-center gap-2" role="img" aria-label="Rated 4 out of 5 stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#CED5D8]"
+                           viewBox="0 0 24 24" aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex items-center gap-3 mt-4">
+                  <button type="button"
+                     class="w-full cursor-pointer text-sm px-3.5 py-2 font-semibold rounded-md bg-blue-600 hover:bg-blue-700 text-white border border-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Add
+                     to cart</button>
+                  <button type="button" aria-label="Add to wishlist"
+                     class="border border-slate-300 hover:bg-gray-50 w-12 h-9 flex items-center justify-center rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                     title="Wishlist">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-pink-700"
+                        viewBox="0 0 64 64" aria-hidden="true">
+                        <path
+                           d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                           data-original="#000000" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </li>
+         </div>
+
+        <div class="card">
+          <li class="flex flex-col hover:shadow-md transition-all">
+            <div class="w-full bg-gray-50">
+               <a href="#" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                  <img src="images/images.png" alt="Product 3"
+                     class="w-full object-cover object-top aspect-[230/307]" />
+               </a>
+            </div>
+
+            <div class="p-2 flex-1 flex flex-col">
+               <div class="flex-1">
+                  <div class="w-full">
+                     <h3 class="text-base font-semibold text-slate-900 truncate">
+                        Effortless Café Casuals</h3>
+                     <p class="text-sm mt-1 text-slate-600 truncate">Relaxed tank top and jeans
+                        outfit</p>
+                  </div>
+                  <div class="flex items-center flex-wrap justify-between gap-2 mt-3">
+                     <div class="flex gap-2">
+                        <p class="text-base font-bold text-slate-900">$14</p>
+                        <p class="text-base text-slate-600"><strike>$15</strike></p>
+                     </div>
+                     <div class="flex justify-center gap-2" role="img" aria-label="Rated 4 out of 5 stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#ffc107]" viewBox="0 0 24 24"
+                           aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5 fill-[#CED5D8]"
+                           viewBox="0 0 24 24" aria-hidden="true">
+                           <path
+                              d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+                              data-original="#ffc107" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex items-center gap-3 mt-4">
+                  <button type="button"
+                     class="w-full cursor-pointer text-sm px-3.5 py-2 font-semibold rounded-md bg-blue-600 hover:bg-blue-700 text-white border border-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">Add
+                     to cart</button>
+                  <button type="button" aria-label="Add to wishlist"
+                     class="border border-slate-300 hover:bg-gray-50 w-12 h-9 flex items-center justify-center rounded-md cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                     title="Wishlist">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-4  fill-pink-700"
+                        viewBox="0 0 64 64" aria-hidden="true">
+                        <path
+                           d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                           data-original="#000000" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </li>
+        </div>
+
+      </ul>
+   </div>
+</section>
+
+
+<!-- card page end -->
+
+
+<!-- Contact section -->
+
+<section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-4xl text-7xl font-bold title-font mb-4 text-[#ffd278]">Contact Us</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed  text-1xl text-[#ffd278]">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-[#ffd278]">Name</label>
+            <input type="text" id="name" name="name" class="w-full  bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-[#ffd278]">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-[#ffd278]">Message</label>
+            <textarea id="message" name="message" class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <button class=" btn1 flex mx-auto text-white bg-yellow-500 border-0 py-1 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Order Now</button>
+        </div>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+          <a class="text-yellow-500">Shobaika1258@email.com</a>
+          <p class="leading-normal my-5 text-yellow-500">49 Smith St.
+            <br>Saint Cloud, MN 56301
+          </p>
+          
+             <!-- From Uiverse.io by david-mohseni --> 
+<ul class="wrapper">
+  <li class="icon facebook">
+    <span class="tooltip">Facebook</span>
+    <svg
+      viewBox="0 0 320 512"
+      height="1.2em"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+      ></path>
+    </svg>
+  </li>
+  <li class="icon twitter">
+    <span class="tooltip">Twitter</span>
+    <svg
+      height="1.8em"
+      fill="currentColor"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+      class="twitter"
+    >
+      <path
+        d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+      ></path>
+    </svg>
+  </li>
+  <li class="icon instagram">
+    <span class="tooltip">Instagram</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="1.2em"
+      fill="currentColor"
+      class="bi bi-instagram"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+      ></path>
+    </svg>
+  </li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact section end -->
+
+   <section class="relative overflow-hidden px-6 py-16 text-center md:px-8 md:py-24" aria-labelledby="jumbotron-heading-4">
+
+   <div>
+      <!-- Background image -->
+      <img src="images/image.png" alt="Background"
+         class="absolute inset-0 w-full h-full object-cover" />
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black/75"></div>
+   </div>
+
+   <div class="relative max-w-5xl mx-auto">
+      <h2 id="jumbotron-heading-4" class="text-slate-50 text-3xl font-bold mb-6 md:text-5xl">
+         Showcase Your Product or Service in Style
+      </h2>
+      <div class="px-4">
+         <p class="text-base text-slate-300 leading-relaxed md:text-lg">
+            Highlight what makes your brand unique with a bold, modern banner design.
+            Perfect for product launches, service promotions, or portfolio features.
+            Make your first impression unforgettable.
+         </p>
+      </div>
+
+      <div class="mt-10">
+         <a href="#"
+            class=" btn1 inline-flex items-center justify-center px-4 py-2.5 text-white text-sm font-semibold rounded-md cursor-pointer bg-blue-600 hover:bg-blue-700 border border-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+            About Us
+         </a>
+      </div>
+   </div>
+</section>
+
+   </div>
+ 
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+</body>
+</html>
